@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*JavaScript is a dynamically typed language. This means that variable types are determined at runtime, and you do not need to explicitly declare the type of a variable before using it.
+       You can assign different types of values to a variable during its lifetime.*/
+
+      //   function toCelsius(fahrenheit) {
+      //     return (5 / 9) * (fahrenheit - 32);
+      //   }
+      //   console.log(toCelsius(77));
+
+      //   let large = 123e5
+      //   let small = 123e-5
+      //   console.log(large, small)
+
+      //       let x = 0xF0
+      //       console.log(x)
+      //       let myNumber = 32;
+      // let num =
+      // "Decimal 32 = " + "\n" +
+
+      // "Hexatrigesimal (base 36): " + myNumber.toString(36) + "\n" +
+      // "Duotrigesimal (base 32): " + myNumber.toString(32) + "\n" +
+      // "Hexadecimal (base 16): " + myNumber.toString(16) + "\n" +
+      // "Duodecimal (base 12): " + myNumber.toString(12) + "\n" +
+      // "Decimal (base 10): " + myNumber.toString(10) + "\n" +
+      // "Octal (base 8): " + myNumber.toString(8) + "\n" +
+      // "Binary (base 2): " + myNumber.toString(2);
+
+      // console.log(num)
+
+      // let num = 23;
+      // num++
+      // alert(num)
+      // console.log(5+11+10+16+18+12+15+8+18+9+22+23+18+18+15+18+13+19+11+9+14+18+7+26+52+24+10+34+38+18+41+27+20+134+36+19+41+30+50+18+32+48+13+26+11+19+31+26+7+44)
+      // JavaScript DataType
+      // primitive dataType
+      // 7 type - Number, String, Boolean, BigInt, null, undefined, Symbol,
+
+      // Symbol - get unique value
+      // const id = Symbol('123')
+      // const id2 = Symbol('123')
+      // console.log(id === id2) // false
+
+      // Reference (Non-primitive)
+      // Object, Array, Function
+
+      // stack and heap memory
+
+      // stack - Primitive data store and get copy value
+      // let name = "primitive";
+      // let name2 = name;
+      // name2 = "non-primitive";
+      // console.log("name" + ":" + name);
+      // console.log("name2" + ":" + name2);
+
+      // heap - Reference(Non-primitive) data store and get reference value
+      // let user1 = {
+      //   email: "user1@example.com",
+      //   age: 25,
+      // };
+      // let user2 = user1;
+      // user2.email = "user2@example.com";
+
+      // console.log("user1" + ":" + user1.email);
+      // console.log("user2" + ":" + user2.email);
+
+      // 1) String
+      
+      // using backticks  (``) is string interpolation
+      // let st = "string interpolation";
+      // console.log(
+      //   `This is a Template literals name is ${st.toLocaleUpperCase()}`
+      // );
+
+      // const name = "hitesh";
+      // const repoCount = 50;
+
+      // console.log(name + repoCount + " Value");
+
+      // console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+
+      // const gameName = new String("hitesh-hc-com");
+
+      // console.log(gameName[0]);
+      // console.log(gameName.__proto__);
+
+      // console.log(gameName.length);
+      // console.log(gameName.toUpperCase());
+      // console.log(gameName.charAt(2));
+      // console.log(gameName.indexOf("t"));
+
+      // const newString = gameName.substring(0, 4);
+      // console.log(newString);
+
+      // const anotherString = gameName.slice(-8, 4);
+      // console.log(anotherString);
+
+      // const newStringOne = "   hitesh    ";
+      // console.log(newStringOne);
+      // console.log(newStringOne.trim());
+
+      // const url = "https://hitesh.com/hitesh%20choudhary";
+
+      // console.log(url.replace("%20", "-"));
+
+      // console.log(url.includes("sundar"));
+
+      // console.log(gameName.split("-"));
+
+      // const newObj = new Object();
+      // console.log(newObj);
+
+      // 2) Number
+      // const score = 400
+      // console.log(score);
+
+      // const balance = new Number(100)
+      // console.log(balance);
+
+      // console.log(balance.toString().length);
+      // console.log(balance.toFixed(1));
+
+      // const otherNumber = 123.8966
+
+      // console.log(otherNumber.toPrecision(4));
+
+      // const hundreds = 1000000
+      // console.log(hundreds.toLocaleString('en-IN'));
+
+      // +++++++++++++ Maths +++++++++++++++++++++++++++++
+
+      // console.log(Math);
+      // console.log(Math.abs(-4));
+      // console.log(Math.round(4.6));
+      // console.log(Math.ceil(4.2));
+      // console.log(Math.floor(4.9));
+      // console.log(Math.min(4, 3, 6, 8));
+      // console.log(Math.max(4, 3, 6, 8));
+
+      // console.log(Math.random());
+      // console.log((Math.random()*10) + 1);
+      // console.log(Math.floor(Math.random()*10) + 1);
+
+      // const min = 10
+      // const max = 20
+
+      // console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+      // 3) Dates
+      // let myDate = new Date();
+      // console.log(myDate.toString());
+      // console.log(myDate.toDateString());
+      // console.log(myDate.toLocaleString());
+      // console.log(typeof myDate);
+
+      // let myCreatedDate = new Date(2023, 0, 23)
+      // let myCreatedDate = new Date(2023, 0, 23, 5, 3)
+      // let myCreatedDate = new Date("2023-01-14")
+      // let myCreatedDate = new Date("01-14-2023");
+      // console.log(myCreatedDate.toLocaleString());
+
+      // let myTimeStamp = Date.now();
+
+      // console.log(myTimeStamp);
+      // console.log(myCreatedDate.getTime());
+      // console.log(Math.floor(Date.now()/1000));
+
+      // let newDate = new Date();
+      // console.log(newDate);
+      // console.log(newDate.getMonth() + 1);
+      // console.log(newDate.getDay());
+
+      // `${newDate.getDay()} and the time `
+
+      // newDate.toLocaleString("default", {
+      //   weekday: "long",
+      // });
+    </script>
+  </body>
+</html>
